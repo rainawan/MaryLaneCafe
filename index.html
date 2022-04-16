@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name = "viewport" content="with=device-width, initial-scale=1.0">
+	<title>Mary Lane Cafe</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+    <link ref="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+<section class ="header">
+    <nav>
+        <a href="marylane.html"><img src="maryimages/logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">MENU</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+        
+<div class="text-box">
+    <h1>Mary Lane Cafe</h1>
+    <p>Welcome to Mary Lane! We serve breakfast and brunch with all-natural, organic ingredients.<br> Pastries are baked fresh each day, as are our made-from-scratch croissants, breads,<br> and cakes. Our lunch meats are 100% natural and contain no chemicals or fillers.<br>Mary Lane strives to serve delicious meals with original, authentic tastes.</p>
+    <a  href="" class="hero-btn">Visit Us Soon!</a>
+</div>    
+        
+</section>
+
+<!------ Employee's Choices ------->
+    
+<section class="choices">
+    <h1>Employee's Choices</h1>
+    <p>When it comes to Mary's famous recipes, it's hard to choose just one.<br>Here are some employee favorites!</p>
+    
+    <div class="row">
+        <div class="choices-col">
+            <h3>Brioche French Toast</h3>
+            <p>"Is there anything better than fresh baked brioche bread, topped with fresh fruit and Boysenberry syrup"</p>
+        </div>
+        <div class="choices-col">
+            <h3>BLTuna</h3>
+            <p>"Nothing tops Mary's tuna salad, spring greens, and heirloom tomaotes on fresh-out-the-oven country bread"</p>
+        </div>
+        <div class="choices-col">
+            <h3>The Mary Ann</h3>
+            <p>"A blend of spinach, kale, bananas, acai, and mango vanilla protein powder, this energy boosting smoothie is what gets me through the day."</p>
+        </div>
+    </div>
+    
+</section>
+    
+
+    <script>
+    
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200";
+        }
+    
+    </script>
+
+</body>
+</html>
