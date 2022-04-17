@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name = "viewport" content="with=device-width, initial-scale=1.0">
+	<title>Mary Lane Cafe</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/04e623d2ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class ="sub-header">
+    <nav>
+        <a href="marylane.html"><img src="maryimages/logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">MENU</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Menu Items</h1>  
+    
+</section>
+
+
+    
+<!------ Menu ------->
+<section id="menu-list" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center" id="menu-flters">
+                <ul>
+                <li><a class="filter active" data-filter=".menu-restaurant">DAILY MENU</a></li>
+                <li><a class="filter" data-filter=".taco">TACO TUESDAYS</a></li>
+                <li><a class="filter" data-filter=".pie">PIES</a></li>
+            </ul>
+            </div>
+            
+            <div class="menu-wrapper">
+                
+                <div class="breakfast menu-restaurant">
+                    <span class="clearfix">
+                        <span class="menu-item">Pancakes</span>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">$10.95</span>
+                    </span>
+                    <span class="menu-subtitle">Mary's famous buttermilk pancakes. Made from scratch with Madagascar Vanilla beans and. Served with real maple or boysenberry syrup.</span>
+                </div>
+                
+                <div class="breakfast menu-restaurant">
+                    <span class="clearfix">
+                        <span class="menu-item">Brioche French Toast</span>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">$10.95</span>
+                    </span>
+                    <span class="menu-subtitle"><br>Fresh Baked Brioche Bread. Topped with fresh fruit and served with real Maple or Boysenberry syrup.</span>
+                </div>
+                
+                <div class="breakfast menu-restaurant">
+                    <span class="clearfix">
+                        <span class="menu-item">Liege Waffles</span>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">$10.95</span>
+                    </span>
+                    <span class="menu-subtitle">Decadent Waffles made with Belgium Pearl Sugar. Topped with Fresh Berries.</span>
+                </div>
+                
+                <!------ End Daily Items ------->
+                
+                <div class="taco menu-restaurant">
+                    <span class="clearfix">
+                        <span class="menu-item">Taco</span>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">$10.95</span>
+                    </span>
+                    <span class="menu-subtitle"><br>Mary's famous buttermilk pancakes. Made from scratch with Madagascar Vanilla beans and. Served with real maple or boysenberry syrup.</span>
+                </div>
+                
+                <!------ End Taco Tuesdays ------->
+                
+                <div class="pie menu-restaurant">
+                    <span class="clearfix">
+                        <span class="menu-item">Pie</span>
+                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
+                        <span class="menu-price">$10.95</span>
+                    </span>
+                    <span class="menu-subtitle"><br>Mary's famous buttermilk pancakes. Made from scratch with Madagascar Vanilla beans and. Served with real maple or boysenberry syrup.</span>
+                </div>
+                
+                <!------ End Pies ------->
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+    
+    
+<!------ Footer -------> 
+    
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Check Out Our Social Media Pages!</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Created by Raina Wan<br>Note: This is an unofficial webpage for Mary Lane Cafe</p>
+</section>
+    
+<!------ JavaScript For Menu Toggle -------> 
+
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+    
+<!------ jQuery for JavaScript plugins ------->
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+
+</body>
+</html>
