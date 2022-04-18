@@ -16,11 +16,11 @@
         <div class="nav-links" id="navLinks">
             <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">MENU</a></li>
-		<li><a href="">GALLERY</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="marylane.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -29,7 +29,7 @@
 <div class="text-box">
     <h1>Mary Lane Cafe</h1>
     <p>Welcome to Mary Lane! We serve breakfast and brunch with all-natural, organic ingredients.<br> Pastries are baked fresh each day, as are our made-from-scratch croissants, breads,<br> and cakes. Our lunch meats are 100% natural and contain no chemicals or fillers.<br>Mary Lane strives to serve delicious meals with original, authentic tastes.</p>
-    <a  href="" class="hero-btn">Visit Us Soon!</a>
+    <a  href="gallery.html" class="hero-btn">Visit Us Soon!</a>
 </div>    
         
 </section>
@@ -38,7 +38,7 @@
     
 <section class="choices">
     <h1>Employee's Choices</h1>
-    <p>When it comes to Mary's famous recipes, it's hard to choose just one.<br>Here are some employee favorites!</p>
+    <p>When it comes to Mary's homemade recipes, it's hard to choose just one.<br>Here are some employee favorites!</p>
     
     <div class="row">
         <div class="choices-col">
@@ -151,7 +151,7 @@
     
 <section class="cta">
     <h1>We'd Love To Hear Your Feedback<br>And Answer Any Questions</h1>
-    <a href="" class="hero-btn">CONTACT US</a>
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
 </section>
     
 <!------ Footer -------> 
@@ -160,18 +160,19 @@
     <h4>About Us</h4>
     <p>Check Out Our Social Media Pages!</p>
     <div class="icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.facebook.com/MaryLaneCafe/" target="_blank">
+            <i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/marylanecafe/" target="_blank">
+            <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.yelp.com/biz/mary-lane-cafe-san-gabriel" target="_blank">
+            <i class="fa-brands fa-yelp"></i></a>
     </div>
     <p>Created by Raina Wan<br>Note: This is an unofficial webpage for Mary Lane Cafe</p>
 </section>
-    
+
 <!------ JavaScript For Menu Toggle -------> 
-	
-<script>
     
+<script>
     var navLinks = document.getElementById("navLinks");
     function showMenu(){
         navLinks.style.right = "0";
@@ -179,9 +180,7 @@
     function hideMenu(){
         navLinks.style.right = "-200px";
     }
-    
 </script>
 
 </body>
 </html>
-
