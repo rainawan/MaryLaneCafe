@@ -124,6 +124,7 @@ nav .fa-solid {
 }
 
 /*----- Employee's Choices -----*/
+
 .choices{
     width: 80%;
     margin: auto;
@@ -172,6 +173,7 @@ h3{
 }
 
 /*----- A Look Inside -----*/
+
 .interior{
     width: 80%;
     margin: auto;
@@ -411,7 +413,11 @@ h3{
 }
 
 /*----- Menu Items -----*/
-
+.menuitems {
+    background-image: url(maryimages/grid.webp);
+    display: flex;
+    padding: 10px;
+}
 .mytabs {
     display: flex;
     flex-wrap: wrap;
@@ -426,6 +432,10 @@ h3{
     padding: 25px;
     background: #e5daab;
     font-weight: bold;
+    transition: 0.2s;
+}
+.mytabs label:hover {
+    background: rgba(232, 227, 207, 1);
 }
 .mytabs .menu {
     width: 100%;
@@ -525,6 +535,7 @@ h3{
     width: 80%;
     margin: auto;
 }
+
 .contact-col {
     flex-basis: 48%;
     margin-bottom: 30px;
@@ -553,4 +564,7 @@ h3{
     outline: none;
     border: 1px solid #444444;
     box-sizing: border-box;
+}
+.contact {
+    background-image: url(maryimages/grid.webp);
 }
