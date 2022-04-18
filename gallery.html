@@ -19,12 +19,13 @@
                 <li><a href="">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
                 <li><a href="">MENU</a></li>
+                <li><a href="">GALLERY</a></li>
                 <li><a href="">CONTACT</a></li>
             </ul>
         </div>
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </nav>
-    <h1>A Look Inside</h1>  
+    <h1>A Peek Inside</h1>  
     
 </section>
 <div class="full-img" id="fullImgBox">
@@ -32,10 +33,34 @@
     <span onclick="closeFullImg()">X</span>
 </div>
 <div class="gallery">
-    <img src="maryimages/photo1.jpg" onclick="openFullImg()">
-    <img src="maryimages/photo2.jpg" onclick="closeFullImg()">
-    <img src="maryimages/photo3.jpg" onclick="closeFullImg()">
+    <img src="maryimages/photo6.jpg" onclick="openFullImg(this.src)">
+    <img src="maryimages/photo10.jpg" onclick="openFullImg(this.src)">
+    <img src="maryimages/photo1.jpg" onclick="openFullImg(this.src)">
+    <img src="maryimages/photo3.jpg" onclick="openFullImg(this.src)">
+    <img src="maryimages/photo2.jpg" onclick="openFullImg(this.src)">
+    <img src="maryimages/photo4.jpg" onclick="openFullImg(this.src)">
+    <img src="maryimages/photo7.jpg" onclick="openFullImg(this.src)">
+    <img src="maryimages/photo8.jpg" onclick="openFullImg(this.src)">
+    <img src="maryimages/photo9.jpg" onclick="openFullImg(this.src)">
+    <img src="maryimages/photo12.jpg" onclick="openFullImg(this.src)">
+    <img src="maryimages/photo11.jpg" onclick="openFullImg(this.src)">
+    <img src="maryimages/photo13.jpg" onclick="openFullImg(this.src)">
 </div>
+    
+<script>
+    
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    
+    function openFullImg(pic) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg() {
+        fullImgBox.style.display = "none";
+    }
+    
+</script>
     
 <!------ Footer -------> 
     
