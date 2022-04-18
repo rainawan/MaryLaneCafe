@@ -16,11 +16,11 @@
         <div class="nav-links" id="navLinks">
             <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">MENU</a></li>
-		<li><a href="">GALLERY</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="marylane.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -30,7 +30,8 @@
 </section>
 
 <!------ Contact Us -------> 
-    
+
+<section class="contact">
 <section class="location">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.563070463803!2d-118.1065993847835!3d34.10633198059127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2db2917cad7f5%3A0x3488ae21c0f7a69e!2sMary%20Lane%20Cafe!5e0!3m2!1sen!2sus!4v1650239897998!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
@@ -56,17 +57,24 @@
                     <h5>ml@marylanecafe.com</h5>
                 </span>
             </div>
+            <div>
+                <i class="fa-solid fa-clock"></i>
+                <span>
+                    <h5>Monday : &emsp;&emsp;&emsp; Closed<br>Tuesday :&emsp;&emsp;&emsp;&nbsp; 8AM - 2PM<br>Wednesday :&emsp;&ensp; 8AM - 2PM<br>Thursday :&emsp;&emsp;&ensp;&nbsp; 8AM - 2PM<br>Friday :&emsp;&emsp;&emsp;&emsp;&nbsp; 8AM - 2PM<br>Saturday :&emsp;&emsp;&ensp;&nbsp; 8AM - 2PM<br>Sunday :&emsp;&emsp;&emsp;&ensp; 8AM - 2PM</h5>
+                </span>
+            </div>
         </div>
         <div class="contact-col">
-            <form action="">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="text" placeholder="Subject" required>
-                <textarea rows="8" placeholder="Message" required></textarea>
+            <form action="form.php" method="post">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
                 <buttom type="submit" class="hero-btn blue-btn">Send Message</buttom>
             </form>
         </div>
     </div>
+</section>
 </section>
     
 <!------ Footer -------> 
@@ -75,10 +83,12 @@
     <h4>About Us</h4>
     <p>Check Out Our Social Media Pages!</p>
     <div class="icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.facebook.com/MaryLaneCafe/" target="_blank">
+            <i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/marylanecafe/" target="_blank">
+            <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.yelp.com/biz/mary-lane-cafe-san-gabriel" target="_blank">
+            <i class="fa-brands fa-yelp"></i></a>
     </div>
     <p>Created by Raina Wan<br>Note: This is an unofficial webpage for Mary Lane Cafe</p>
 </section>
