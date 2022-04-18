@@ -7,8 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/04e623d2ae.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,6 +19,7 @@
                 <li><a href="">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
                 <li><a href="">MENU</a></li>
+                <li><a href="">GALLERY</a></li>
                 <li><a href="">CONTACT</a></li>
             </ul>
         </div>
@@ -30,79 +29,239 @@
     
 </section>
 
-
-    
-<!------ Menu ------->
-<section id="menu-list" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center" id="menu-flters">
-                <ul>
-                <li><a class="filter active" data-filter=".menu-restaurant">DAILY MENU</a></li>
-                <li><a class="filter" data-filter=".taco">TACO TUESDAYS</a></li>
-                <li><a class="filter" data-filter=".pie">PIES</a></li>
-            </ul>
-            </div>
-            
-            <div class="menu-wrapper">
-                
-                <div class="breakfast menu-restaurant">
-                    <span class="clearfix">
-                        <span class="menu-item">Pancakes</span>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$10.95</span>
-                    </span>
-                    <span class="menu-subtitle">Mary's famous buttermilk pancakes. Made from scratch with Madagascar Vanilla beans and. Served with real maple or boysenberry syrup.</span>
-                </div>
-                
-                <div class="breakfast menu-restaurant">
-                    <span class="clearfix">
-                        <span class="menu-item">Brioche French Toast</span>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$10.95</span>
-                    </span>
-                    <span class="menu-subtitle"><br>Fresh Baked Brioche Bread. Topped with fresh fruit and served with real Maple or Boysenberry syrup.</span>
-                </div>
-                
-                <div class="breakfast menu-restaurant">
-                    <span class="clearfix">
-                        <span class="menu-item">Liege Waffles</span>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$10.95</span>
-                    </span>
-                    <span class="menu-subtitle">Decadent Waffles made with Belgium Pearl Sugar. Topped with Fresh Berries.</span>
-                </div>
-                
-                <!------ End Daily Items ------->
-                
-                <div class="taco menu-restaurant">
-                    <span class="clearfix">
-                        <span class="menu-item">Taco</span>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$10.95</span>
-                    </span>
-                    <span class="menu-subtitle"><br>Mary's famous buttermilk pancakes. Made from scratch with Madagascar Vanilla beans and. Served with real maple or boysenberry syrup.</span>
-                </div>
-                
-                <!------ End Taco Tuesdays ------->
-                
-                <div class="pie menu-restaurant">
-                    <span class="clearfix">
-                        <span class="menu-item">Pie</span>
-                        <span style="left: 166px; right: 44px;" class="menu-line"></span>
-                        <span class="menu-price">$10.95</span>
-                    </span>
-                    <span class="menu-subtitle"><br>Mary's famous buttermilk pancakes. Made from scratch with Madagascar Vanilla beans and. Served with real maple or boysenberry syrup.</span>
-                </div>
-                
-                <!------ End Pies ------->
-                
-            </div>
-            
+<section class="menuitems">
+<div class="mytabs">
+    <input type="radio" id="tabbreakfast" name="mytabs" checked="checked">
+    <label for="tabbreakfast">Breakfast</label>
+    <div class="menu">
+        <div class="single-item">
+        <h1>BREAKFAST</h1>
+            <h2>Pancakes<span>$10.95</span></h2>
+            <p>Mary's famous buttermilk pancakes. Made from scratch with Madagascar Vanilla beans and served with real maple or boysenberry syrup.<br><br><br></p>
+            <h2>Brioche French Toast<span>$10.95</span></h2>
+            <p>Fresh Baked Brioche Bread. Topped with fresh fruit and served with real Maple or Boysenberry syrup.<br><br><br></p>
+            <h2>Liege Waffles<span>$9.95</span></h2>
+            <p>Decadent Waffles made with Belgium Pearl Sugar. Topped with Fresh Berries.<br><br><br></p>
+            <h2>Breakfast Wrap<span>$8.99</span></h2>
+            <p>Eggs, Bacon or Sausage, potatoes, cheese, pico de gallo wrapped in a hand made tortilla.<br><br><br></p>
+            <h2>Breakfast Bowl<span>$10.75</span></h2>
+            <p>Bacon or Sausage, spinach, potatoes, cheese, scrambled eggs, pico de gallo.<br><br><br></p>
+            <h2>Lox Bagel<span>$10.75</span></h2>
+            <p>Bagel topped with cream cheese, wild lox, onions, tomatoes, and capers.<br><br><br></p>
+            <h2>Breakfast Sandwich<span>$8.99</span></h2>
+            <p>Hand Made English Muffin, eggs, bacon or sausage, cheddar cheese served with a side of strawberry compote.<br><br><br></p>
+            <h2>Avocado Toast<span>$8.75</span></h2>
+            <p>Freshly baked country bread, topped with avocado, micro greens, radish, cucumber and red pepper flakes.<br><br><br></p>
+            <h2>The Boschoff Breakfast<span>$11.75</span></h2>
+            <p>Spinach, sundried tomatoes, and feta cheese topped with two fried eggs. Served with toast.<br><br><br></p>
+            <h2>Big Dave's Breakfast<span>$12.99</span></h2>
+            <p>2 Eggs, Bacon or Sausage, Potatoes, Fresh Baked Country Toast and Strawberry Preserves.<br><br><br></p>
+            <h2>Oatmeal<span>$8.99</span></h2>
+            <p>Creamy Steel Cut oats served with fresh fruit, raw sugar, and cream. *Oatmeal is made with Dairy. Almond milk available upon request.<br><br><br></p>
         </div>
     </div>
-</section>
     
+    <input type="radio" id="tabsandwich" name="mytabs">
+    <label for="tabsandwich">Sandwiches</label>
+    <div class="menu">
+    <h1>SANDWICHES</h1>
+        <h2>Pulled Lamb Sandwich<span>$12.99</span></h2>
+            <p>Slow cooked New Zealand lamb served on Freshly baked country bread. Served with a side salad.<br><br><br></p>
+        <h2>The Maria<span>$10.99</span></h2>
+            <p>Grilled chicken, roasted red pepper tapenade, provolone cheese on fresh baked country bread. Served with a side salad.<br><br><br></p>
+        <h2>BLTuna<span>$9.99</span></h2>
+            <p>Tuna Salad, Organic bacon, Spring Greens, Heirloom tomatos and red onion on freshly baked country bread.<br><br><br></p>
+        <h2>Tuscan Turkey<span>$10.99</span></h2>
+            <p>Fresh roasted, all natural turkey breast, Garlic herb spread, Sundried tomato paste, Spring Greens, red onion on Freshly baked Country bread.<br><br><br></p>
+        <h2>Spring Thyme<span>$9.99</span></h2>
+            <p>Fresh roasted all-natural turkey breast, mayo, Spring greens, red onion, and dried cranberries.<br><br><br></p>
+        <h2>Grilled Cheese<span>$8.99</span></h2>
+            <p>Freshly baked country bread oozing with Cheddar and Monterey Jack cheese.<br><br><br></p> 
+        <h2>Quesadilla<span>$8.75</span></h2>
+            <p>Handmade tortilla filled with Cheddar and Jack cheese. Served with sour cream and pico de gallo.<br><br><br></p>
+        <h2>BBQ Chicken Sandwich<span>$9.99</span></h2>
+            <p>Grilled Chicken, Cheddar and Jack Cheese, Pico de Gallo, and Bbq sauce on Fresh Baked Country Bread. Served with a side salad.<br><br><br></p>
+        <h2>Chipotle Chicken Sandwich<span>$9.99</span></h2>
+            <p>Grilled Chicken, Cheddar and Jack Cheese, Chipotle Aioli on Fresh Baked Country Bread. Served with a side salad.<br><br><br></p>
+        <h2>Bagel Sandwich<span>$9.99</span></h2>
+            <p>Cream Cheese, All natural turkey, sring greens greens, tomato, onion.<br><br><br></p>
+    </div>
+    
+    <input type="radio" id="tabsalad" name="mytabs">
+    <label for="tabsalad">Salads</label>
+    <div class="menu">
+    <h1>SALADS</h1>
+        <h2>Sonoran Salad<span>$12.50</span></h2>
+            <p>Mixed Greens, black beans, roasted corn, pico de gallo, sour cream, avocado, tortilla chips and chipotle ranch dressing.<br><br><br></p>
+        <h2>Tuna Salad<span>$13.50</span></h2>
+            <p>Spring greens, tuna, avocado, green apples, Heirloom tomatoes and scallions. Ranch or balsamic vinaigrette dressing.<br><br><br></p>
+        <h2>Spinach Salad<span>$11.25</span></h2>
+            <p>Organic spinach, bacon, toasted almonds, pecans, dried cranberries, blue cheese crumbles, and raspberry balsamic vinaigrette dressing.<br><br><br></p>
+        <h2>Mediterranean Salad<span>$11.25</span></h2>
+            <p>Organic mixed greens, heirloom tomatoes, kalamata olives, red onion, cucumber, feta cheese and balsamic vinaigrette.<br><br><br></p>
+        <h2>BBQ Chicken Salad<span>$12.75</span></h2>
+            <p>Organic mixed greens, grilled chicken breast, roasted corn, shredded cheese, Pico de Gallo, and bbq ranch dressing.<br><br><br></p>
+        <h2>Hermosa Salad<span>$15.99</span></h2>
+            <p>Organic spring greens, grilled chicken, bacon, edible flowers, blue cheese crumbles, heirloom tomatoes, hard boiled egg, red onion and balsamic vinaigrette.<br><br><br></p>
+        <h1>SOUP DU JOUR</h1>
+        <h2>Bowl<span>$7.50</span></h2>
+        <p>Soup of the Day<br><br></p>
+    </div>
+    
+    <input type="radio" id="tabkids" name="mytabs">
+    <label for="tabkids">Kids</label>
+    <div class="menu">
+    <h1>KIDS</h1>
+        <h2>PB & J<span>$6</span></h2>
+            <p>A spread of organic peanut butter and your choice of strawberry or grape jelly.<br><br><br></p>
+        <h2>Sandwich<span>$6</span></h2>
+            <p>The Mini Me of any of our sandwiches.<br><br><br></p>
+        <h2>Quesadilla<span>$6</span></h2>
+            <p>Flour tortilla filled with savory, melted cheese.<br><br><br></p>
+        <h2>Grilled Cheese<span>$8.99</span></h2>
+            <p>Freshly baked country bread oozing with Cheddar and Monterey Jack cheese.<br><br><br></p>
+        <h2>Animal pancakes<span>$6</span></h2>
+            <p>2 animal shaped pancakes served with fresh fruit and real maple syrup.<br><br><br></p>
+    </div>
+    
+    <input type="radio" id="tabdrinks" name="mytabs">
+    <label for="tabdrinks">Drinks</label>
+    <div class="menu">
+    <h1>POWER SMOOTHIES</h1>
+        <h2>The Mary Lane<span>$6.99</span></h2>
+            <p>Spinach, Kale, Flax seed, bee pollen, banana, chocolate protein powder, almond milk, coconut milk, cinnamon.<br><br><br></p>
+        <h2>The Mary Jane<span>$6.99</span></h2>
+            <p>Spinach, Kale, Hemp seed, Almond butter, coconut milk, almond milk, chocolate or vanilla protein powder, banana.<br><br><br></p>
+        <h2>The Mary Ann<span>$6.99</span></h2>
+            <p>Spinach, Kale, Banana, Coconut milk, acai, pineapple, mango vanilla protein powder, chia seed, turmeric.<br><br><br></p>
+        <h2>The Queen Mary<span>$6.99</span></h2>
+            <p>Peanut butter and royal Jelly made with Spinach, Kale, coconut milk, almond milk, Greek yogurt and banana.<br><br><br></p>
+    <h1>FRUITY AND CREAMY SMOOTHIES</h1>
+        <h2>Large<span>$5.99</span></h2>
+            <p>Mix and Match smoothies, made with real fruit, fruit juice, and plain greek yogurt. Choose from mango, strawberry, peach, coconut, pineapple, and mixed berry, banana, chocolate, mocha, chai, vanilla. peanut butter.<br><br><br></p>
+    <h1>COFFEE</h1>
+        <h2>Coffee 8oz<span>$2</span></h2>
+            <p><br></p>
+        <h2>Coffee 12 oz<span>$2.75</span></h2>
+            <p><br></p>
+        <h2>Americano<span>$2.75</span></h2>
+            <p><br></p>
+        <h2>Iced Latte<span>$4.50</span></h2>
+            <p><br></p>
+        <h2>Cold Brew Coffee w/ Sweet Cream<span>$4.50</span></h2>
+            <p><br></p>
+        <h2>Cold Brew Iced Tea<span>$3.75</span></h2>
+            <p><br></p>
+        <h2>Jasmine Peony Kombucha<span>$4.50</span></h2>
+            <p><br></p>
+        <h2>Hot Tea<span>$2</span></h2>
+            <p>English Breakfast<br>Earl Grey<br>Green<br>Dandelion<br>Wild Raspberry Hibiscus<br>Chai<br>Cinnamon Apple<br><br><br></p>
+    <h1>FRESH SQUEEZED</h1>
+        <h2>Agave Lemonade<span>$3.75</span></h2>
+            <p><br></p>
+        <h2>Lavender Lemonade<span>$3.75</span></h2>
+            <p><br></p>
+        <h2>Rose Lemonade<span>$3.75</span></h2>
+            <p><br></p>
+        <h2>Jasmine Peony Kombucha<span>$4.50</span></h2>
+            <p><br></p>
+        <h2>Orange Juice<span>$3.75</span></h2>
+            <p><br></p>
+        <h2>Kombucha Mimosa<span>$4.75</span></h2>
+            <p><br></p>
+    <h1>SIGNATURE DRINKS</h1>
+        <h2>Rose Latte<span>$5.50</span></h2>
+            <p>Iced<br><br><br></p>
+        <h2>Lavender Latte<span>$5.50</span></h2>
+            <p>Iced<br><br><br></p>
+        <h2>Rose Green Tea Latte<span>$5.50</span></h2>
+            <p>Iced<br><br><br></p>
+        <h2>Cinnamon Latte<span>$5.50</span></h2>
+            <p>Iced<br><br><br></p>
+        <h2>Guittard Mocha Latte<span>$5.50</span></h2>
+            <p>Iced<br>Hot<br><br><br></p>
+        <h2>Guittard White Satin Latte<span>$5.50</span></h2>
+            <p>Iced<br><br><br></p>
+        <h2>Grey and White Latte<span>$5.50</span></h2>
+            <p>Earl Grey and White Chocolate<br>Iced<br><br><br></p>
+        <h2>Caramel Latte<span>$5.50</span></h2>
+            <p>Iced<br><br><br></p>
+        <h2>Nutella Latte<span>$5.50</span></h2>
+            <p>Iced<br><br><br></p>
+        <h2>Irish Cream Latte<span>$5.50</span></h2>
+            <p>Iced<br><br><br></p>
+        <h2>Chai Tea Latte<span>$5.50</span></h2>
+            <p>Iced<br><br><br></p>
+        <h2>Pumpkin Spice Latte<span>$5.50</span></h2>
+            <p>Iced (Seasonal)<br><br><br></p>
+        <h2>Pumpkin Caramel Latte<span>$5.50</span></h2>
+            <p>Iced (Seasonal)<br><br><br></p>
+        <h2>Egg Nog Latte<span>$5.50</span></h2>
+            <p>Iced (Seasonal)<br><br><br></p>
+        <h2>Gingerbread Latte<span>$5.50</span></h2>
+            <p>Iced (Seasonal)<br><br><br></p>
+        
+    </div>
+    
+    <input type="radio" id="tabtacos" name="mytabs">
+    <label for="tabtacos">Taco Tuesdays</label>
+    <div class="menu">
+    <h1>TACO</h1>
+        <h2>Taco Family Meal<span>$45</span></h2>
+            <p>Serves 4-6<br><br>Carne Asada<br>Chicken<br>Vegan<br><br><br></p>
+        <h2>Taco Plate<span>$10</span></h2>
+            <p>2 tacos, rice and beans<br><br>Carne Asada<br>Chicken<br>Vegan<br>Shrimp ($2)<br><br><br></p>
+        <h2>Shrimp Tacos<span>$2.75</span></h2>
+            <p>Fresh-grilled shrimp tacos.<br><br><br></p>
+        <h2>Taco Tray<span>$24</span></h2>
+            <p>12 tacos<br><br>Carne Asada<br>Chicken<br>Vegan<br><br><br></p>
+    <h1>ENCHILADAS</h1>
+        <h2>Enchilada Family Meal<span>$56</span></h2>
+            <p>Tray of 12 cheese enchiladas, rice and beans<br><br><br></p>
+        <h2>Enchilada tray<span>$36</span></h2>
+            <p>12 cheese enchiladas<br><br><br></p>
+        <h2>Enchilada plate<span>$12</span></h2>
+            <p>2 enchiladas, rice and beans<br><br><br></p>
+    <h1>SIDES</h1>
+        <h2>Family Side Salad<span>$15</span></h2>
+            <p>Serves 4<br><br>Spring greens, tomatoes, cucumber, corn, and red onion.<br>Balsamic Vinagrette<br>Ranch<br>Chipotle Ranch<br><br></p>
+        <h2>Family Spicy Fruit Salad<span>$20</span></h2>
+            <p>Pineapple, Mango, and Melon topped with chamoy and Pez Powder.<br><br></p>
+        <h2>Rice<span>$10</span></h2>
+            <p>Serves 4-6<br><br></p>
+        <h2>Beans<span>$10</span></h2>
+            <p>Serves 4-6<br><br></p>
+        <h2>Churros<span>$1.75</span></h2>
+            <p><br></p>
+        <h2>Guacamole and chips<span>$13</span></h2>
+            <p>Homemade chips and chunky guacamole.<br><br><br></p>
+    <h1>BEVERAGES</h1>
+        <h2>Mexican Soda<span>$2.50</span></h2>
+            <p>Coke<br>Sprite<br><br><br></p>
+        <h2>PEZ Cantina Cocktails<span></span></h2>
+            <p>All natural 32 oz cocktails and mixes From LA's Pez Cantina.<br><br>Classic Margarita ($30)<br>Hibiscus Margarita ($32)<br>Paloma (tamarind) ($38)<br>Guavarita($35)<br>Red Sangria ($35)<br>White Sangria ($35)<br>Michelada Mix ($15)<br><br><br></p>
+        <h2>Aguas Frescas<span>$4.50</span></h2>
+            <p>Homemade aguas frescas.<br><br>Horchata<br>Jamaica<br>Jamaica Kombucha ($1)<br><br><br></p>
+    </div>
+    
+    <input type="radio" id="tabpies" name="mytabs">
+    <label for="tabpies">Pies</label>
+    <div class="menu">
+        <h1>4TH OF JULY PIES</h1>
+        <h3>Pies are available for pickup on Sunday, July 4th from 10am - 12pm<br></h3>
+        <h2>Fresh Strawberry Pie (Special)<span>$25</span></h2>
+            <p>Fresh Strawberry pie made from scratch.<br><br>No Whip<br>Whip On Side ($5)<br>American Flag Whip ($5)<br>Regular Whipped Cream ($5)<br><br><br></p>
+        <h2>French Apple Pie<span>$25</span></h2>
+            <p>Deep dish apple pie with streusel topping.<br><br><br></p>
+        <h2>Apple Pie<span>$25</span></h2>
+            <p>Double crust apple pie.<br><br>Baked<br>Unbaked<br>Gluten Free ($5)<br>Vegan<br><br><br></p>
+        <h2>Chicken Pot Pie<span>$35</span></h2>
+            <p>Filled with chicken breast, carrots, peas, potatoes and green beans.<br><br>Baked<br>Unbaked<br><br><br></p>
+        <h2>Veggie Pot Pie<span>$25</span></h2>
+            <p><br></p>
+    </div>
+</div>
+</section>
     
 <!------ Footer -------> 
     
@@ -131,14 +290,6 @@
     }
     
 </script>
-    
-<!------ jQuery for JavaScript plugins ------->
-    
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="contactform/contactform.js"></script>
 
 </body>
 </html>
