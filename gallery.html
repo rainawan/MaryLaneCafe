@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="maryimages/lightbox.css">
     <script src="https://kit.fontawesome.com/04e623d2ae.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,11 +17,11 @@
         <div class="nav-links" id="navLinks">
             <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">MENU</a></li>
-                <li><a href="">GALLERY</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="marylane.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -28,39 +29,37 @@
     <h1>A Peek Inside</h1>  
     
 </section>
-<div class="full-img" id="fullImgBox">
-    <img src="maryimages/photo1.jpg" id="fullImg">
-    <span onclick="closeFullImg()">X</span>
-</div>
-<div class="gallery">
-    <img src="maryimages/photo6.jpg" onclick="openFullImg(this.src)">
-    <img src="maryimages/photo10.jpg" onclick="openFullImg(this.src)">
-    <img src="maryimages/photo1.jpg" onclick="openFullImg(this.src)">
-    <img src="maryimages/photo3.jpg" onclick="openFullImg(this.src)">
-    <img src="maryimages/photo2.jpg" onclick="openFullImg(this.src)">
-    <img src="maryimages/photo4.jpg" onclick="openFullImg(this.src)">
-    <img src="maryimages/photo7.jpg" onclick="openFullImg(this.src)">
-    <img src="maryimages/photo8.jpg" onclick="openFullImg(this.src)">
-    <img src="maryimages/photo9.jpg" onclick="openFullImg(this.src)">
-    <img src="maryimages/photo12.jpg" onclick="openFullImg(this.src)">
-    <img src="maryimages/photo11.jpg" onclick="openFullImg(this.src)">
-    <img src="maryimages/photo13.jpg" onclick="openFullImg(this.src)">
-</div>
-    
-<script>
-    
-    var fullImgBox = document.getElementById("fullImgBox");
-    var fullImg = document.getElementById("fullImg");
-    
-    function openFullImg(pic) {
-        fullImgBox.style.display = "flex";
-        fullImg.src = pic;
-    }
-    function closeFullImg() {
-        fullImgBox.style.display = "none";
-    }
-    
-</script>
+
+<section class="pictures">
+    <div class="gallery">
+        <a href="maryimages/photo6.jpg" data-lightbox="cafe">
+        <img src="maryimages/photo6.jpg"></a>
+        <a href="maryimages/photo10.jpg" data-lightbox="cafe">
+        <img src="maryimages/photo10.jpg"></a>
+        <a href="maryimages/photo1.jpg" data-lightbox="cafe">
+        <img src="maryimages/photo1.jpg"></a>
+        <a href="maryimages/photo3.jpg" data-lightbox="cafe">
+        <img src="maryimages/photo3.jpg"></a>
+        <a href="maryimages/photo2.jpg" data-lightbox="cafe">
+        <img src="maryimages/photo2.jpg"></a>
+        <a href="maryimages/photo4.jpg" data-lightbox="cafe">
+        <img src="maryimages/photo4.jpg"></a>
+        <a href="maryimages/photo7.jpg" data-lightbox="cafe">
+        <img src="maryimages/photo7.jpg"></a>
+        <a href="maryimages/photo8.jpg" data-lightbox="cafe">
+        <img src="maryimages/photo8.jpg"></a>
+        <a href="maryimages/photo9.jpg" data-lightbox="cafe">
+        <img src="maryimages/photo9.jpg"></a>
+        <a href="maryimages/photo12.jpg" data-lightbox="cafe">
+        <img src="maryimages/photo12.jpg"></a>
+        <a href="maryimages/photo11.jpg" data-lightbox="cafe">
+        <img src="maryimages/photo11.jpg"></a>
+        <a href="maryimages/photo13.jpg" data-lightbox="cafe">
+        <img src="maryimages/photo13.jpg"></a>
+    </div>
+    <script src="maryimages/lightbox-plus-jquery.js"></script>
+</section>
+        
     
 <!------ Footer -------> 
     
@@ -68,10 +67,12 @@
     <h4>About Us</h4>
     <p>Check Out Our Social Media Pages!</p>
     <div class="icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.facebook.com/MaryLaneCafe/" target="_blank">
+            <i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/marylanecafe/" target="_blank">
+            <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.yelp.com/biz/mary-lane-cafe-san-gabriel" target="_blank">
+            <i class="fa-brands fa-yelp"></i></a>
     </div>
     <p>Created by Raina Wan<br>Note: This is an unofficial webpage for Mary Lane Cafe</p>
 </section>
@@ -87,8 +88,6 @@
     function hideMenu(){
         navLinks.style.right = "-200px";
     }
-    
 </script>
-
 </body>
 </html>
